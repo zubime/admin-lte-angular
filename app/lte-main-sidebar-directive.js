@@ -27,6 +27,7 @@
       scope: {},
       templateUrl: '/lte-main-sidebar-directive.tpl.html',
       replace: true,
+      transclude: true,
       controllerAs: 'lteMainSidebar',
       controller: function () {
         var vm = this;

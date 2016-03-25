@@ -3,7 +3,7 @@
 
   /**
    * @ngdoc directive
-   * @name adminLteAngular.directive:lteMainHeader
+   * @name adminLteAngular.directive:lteDropdownMenu
    * @restrict EA
    * @element
    *
@@ -12,31 +12,32 @@
    * @example
      <example module="adminLteAngular">
        <file name="index.html">
-        <lte-main-header></lte-main-header>
+        <lte-dropdown-menu></lte-dropdown-menu>
        </file>
      </example>
    *
    */
   angular
     .module('adminLteAngular')
-    .directive('lteMainHeader', lteMainHeader);
+    .directive('lteDropdownMenu', lteDropdownMenu);
 
-  function lteMainHeader($log) {
+  function lteDropdownMenu() {
     return {
       restrict: 'EA',
       scope: {},
-      templateUrl: '/lte-main-header-directive.tpl.html',
+      templateUrl: '/lte-dropdown-menu-directive.tpl.html',
       replace: true,
       transclude: true,
-      controllerAs: 'lteMainHeader',
+      controllerAs: 'lteDropdownMenu',
       controller: function () {
         var vm = this;
-        vm.name = 'lteMainHeader';
+        vm.name = 'lteDropdownMenu';
       },
       link: function (scope, element, attrs) {
         /* jshint unused:false */
         /* eslint "no-unused-vars": [2, {"args": "none"}] */
-        $log.info('lteMainHeader');
+        scope.footer = 'Hello World';
+        scope.header = 'Hello World';
       }
     };
   }

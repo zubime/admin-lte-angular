@@ -49,8 +49,8 @@
       "main": [
         "dist/css/skins/skin-blue.min.css",
         "index2.html",
-        "dist/css/AdminLTE.css",
-        "dist/js/app.js"
+        "dist/css/AdminLTE.css"
+        ,"dist/js/app.js"
       ]
     },
     "font-awesome": {

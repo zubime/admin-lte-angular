@@ -1,0 +1,15 @@
+<!-- Apply any bg-* class to to the info-box to color it -->
+<div ng-class="bgClass">
+  <span class="info-box-icon"><i ng-class="class"></i></span>
+  <div class="info-box-content">
+    <span class="info-box-text">{{options.text}}</span>
+    <span class="info-box-number">{{options.number}}</span>
+    <!-- The progress section is optional -->
+    <div class="progress">
+      <div class="progress-bar" style="width: {{options.progress}}%"></div>
+    </div>
+    <span class="progress-description">
+      {{options.description}}
+    </span>
+  </div><!-- /.info-box-content -->
+</div><!-- /.info-box -->

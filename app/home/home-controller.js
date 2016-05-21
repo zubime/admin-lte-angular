@@ -27,14 +27,18 @@
       title: 'title',
       footer: 'footer'
     }
+    vm.user = {
+      name: 'Alexander Pierce',
+      img: '/images/lte/user1-128x128.jpg'
+    }
     vm.messages = [
-      {name:'Alexander Pierce',time:'23 Jan 2:05 pm',img:'/images/lte/user1-128x128.jpg',
+      {name:'Alexander Pierce',time:new Date(),img:'/images/lte/user1-128x128.jpg',
       text:'Is this template really for free? That\'s unbelievable!',pullright:false},
-      {name:'Alexander Pierce',time:'23 Jan 2:05 pm',img:'/images/lte/user1-128x128.jpg',
+      {name:'Sarah Bullock',time:new Date(),img:'/images/lte/user3-128x128.jpg',
       text:'Is this template really for free? That\'s unbelievable!',pullright:true},
-      {name:'Alexander Pierce',time:'23 Jan 2:05 pm',img:'/images/lte/user1-128x128.jpg',
+      {name:'Alexander Pierce',time:new Date(),img:'/images/lte/user1-128x128.jpg',
       text:'Is this template really for free? That\'s unbelievable!',pullright:false},
-      {name:'Alexander Pierce',time:'23 Jan 2:05 pm',img:'/images/lte/user1-128x128.jpg',
+      {name:'Sarah Bullock',time:new Date(),img:'/images/lte/user3-128x128.jpg',
       text:'Is this template really for free? That\'s unbelievable!',pullright:true},
 
     ];

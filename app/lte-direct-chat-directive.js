@@ -25,7 +25,9 @@
     return {
       restrict: 'EA',
       scope: {
-        messages: '='
+        messages: '=',
+        sendHandler: '&send',
+        user: '='
       },
       templateUrl: '/lte-direct-chat-directive.tpl.html',
       replace: false,
@@ -34,6 +36,7 @@
         var vm = this;
         vm.name = 'lteDirectChat';
       },
+
       link: function (scope, element, attrs) {
         /* jshint unused:false */
         /* eslint "no-unused-vars": [2, {"args": "none"}] */
@@ -46,6 +49,16 @@
           var box = angular.element(this).parents('.direct-chat').first();
           box.toggleClass('direct-chat-contacts-open');
         });
+        scope.message = '';
+        scope.send = function( message ){
+          scope.messages.push(
+            {name:scope.user.name,time:new Date(),img:scope.user.img,
+            text:message,pullright:false}
+
+          );
+          scope.message = '';
+          scope.sendHandler(message);
+        }
 
       }
     };

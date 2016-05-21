@@ -1,0 +1,20 @@
+<div ng-class="mainClass">
+  <div class="box-header with-border">
+    <h3 class="box-title" >{{options.title}}</h3>
+    <div class="box-tools pull-right" ng-transclude="tools">
+      <!-- Buttons, labels, and many other things can be placed here! -->
+      <!-- Here is a label for example -->
+      <button ng-show="collapse" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+      <button ng-show="remove" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+    </div><!-- /.box-tools -->
+  </div><!-- /.box-header -->
+  <div class="box-body" ng-transclude="body">
+
+  </div><!-- /.box-body -->
+  <div class="box-footer" ng-show="(options.footer)" ng-transclude="footer">
+    {{options.footer}}
+  </div><!-- box-footer -->
+  <div class="overlay" ng-show="loading">
+    <i class="fa fa-refresh fa-spin"></i>
+  </div>
+</div><!-- /.box -->

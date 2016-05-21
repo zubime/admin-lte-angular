@@ -150,27 +150,23 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div class="alert alert-danger alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <h4><i class="icon fa fa-ban"></i> Alert!</h4>
+              <lte-alert class="alert-danger" icon="fa-ban" title="Alert!">
                 Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
                 soul, like these sweet mornings of spring which I enjoy with my whole heart.
-              </div>
-              <div class="alert alert-info alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <h4><i class="icon fa fa-info"></i> Alert!</h4>
+              </lte-alert>
+
+              <lte-alert class="alert-info" icon="fa-info" title="Alert!">
                 Info alert preview. This alert is dismissable.
-              </div>
-              <div class="alert alert-warning alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <h4><i class="icon fa fa-warning"></i> Alert!</h4>
-                Warning alert preview. This alert is dismissable.
-              </div>
-              <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                <h4><i class="icon fa fa-check"></i> Alert!</h4>
+              </lte-alert>
+
+              <lte-alert class="alert-warning" icon="fa-warning" title="Alert!">
+              Warning alert preview. This alert is dismissable.
+              </lte-alert>
+
+              <lte-alert class="alert-success" icon="fa-check" title="Alert!">
                 Success alert preview. This alert is dismissable.
-              </div>
+              </lte-alert>
+
             </div>
             <!-- /.box-body -->
           </div>
@@ -187,27 +183,27 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div class="callout callout-danger">
-                <h4>I am a danger callout!</h4>
+              <lte-callout class="callout-danger" title="I am a danger callout!">
+                There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my whole heart.
+              </lte-callout>
 
-                <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my whole heart.</p>
-              </div>
-              <div class="callout callout-info">
-                <h4>I am an info callout!</h4>
+              <lte-callout class="callout-info" title="I am a info callout!">
+                There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my whole heart.
+              </lte-callout>
 
-                <p>Follow the steps to continue to payment.</p>
-              </div>
-              <div class="callout callout-warning">
-                <h4>I am a warning callout!</h4>
+              <lte-callout class="callout-warning" title="I am a warning callout!">
+                There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my whole heart.
+              </lte-callout>
 
-                <p>This is a yellow callout.</p>
-              </div>
-              <div class="callout callout-success">
-                <h4>I am a success callout!</h4>
+              <lte-callout class="callout-success" title="I am a success callout!">
+                There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul,
+                  like these sweet mornings of spring which I enjoy with my whole heart.
+              </lte-callout>
 
-                <p>This is a green callout.</p>
-              </div>
+
             </div>
             <!-- /.box-body -->
           </div>
@@ -222,14 +218,60 @@
 
       <div class="row">
         <div class="col-md-6">
+
+          <uib-tabset active="activeJustified" class="nav-tabs-custom">
+            <uib-tab index="0" heading="Tab 1">
+              <b>How to use:</b>
+
+              <p>Exactly like the original bootstrap tabs except you should use
+                the custom wrapper <code>.nav-tabs-custom</code> to achieve this style.</p>
+              A wonderful serenity has taken possession of my entire soul,
+              like these sweet mornings of spring which I enjoy with my whole heart.
+              I am alone, and feel the charm of existence in this spot,
+              which was created for the bliss of souls like mine. I am so happy,
+              my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
+              that I neglect my talents. I should be incapable of drawing a single stroke
+              at the present moment; and yet I feel that I never was a greater artist than now.
+            </uib-tab>
+            <uib-tab index="1" heading="Tab 2">
+              The European languages are members of the same family. Their separate existence is a myth.
+              For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+              in their grammar, their pronunciation and their most common words. Everyone realizes why a
+              new common language would be desirable: one could refuse to pay expensive translators. To
+              achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+              words. If several languages coalesce, the grammar of the resulting language is more simple
+              and regular than that of the individual languages.
+            </uib-tab>
+            <uib-tab index="2" heading="Tab 3">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </uib-tab>
+            <li class="dropdown" uib-dropdown>
+              <a uib-dropdown-toggle class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Dropdown <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </uib-tabset>
           <!-- Custom Tabs -->
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab_1" data-toggle="tab">Tab 1</a></li>
               <li><a href="#tab_2" data-toggle="tab">Tab 2</a></li>
               <li><a href="#tab_3" data-toggle="tab">Tab 3</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <li class="dropdown" uib-dropdown>
+                <a uib-dropdown-toggle class="dropdown-toggle" data-toggle="dropdown" href="#">
                   Dropdown <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">

@@ -10,6 +10,14 @@
     .module('adminLteAngular', [
       'ui.router',
       'ui.bootstrap',
-      'home'
+      'home',
+      'examples',
+      'mailbox',
+      'calendar',
+      'form',
+      'tables',
+      'dashboard',
+      'uiElements',
+      'charts'
     ]);
 }());

@@ -27,6 +27,7 @@
       scope: {},
       templateUrl: '/lte-main-footer-directive.tpl.html',
       replace: true,
+      transclude:true,
       controllerAs: 'lteMainFooter',
       controller: function () {
         var vm = this;

@@ -40,8 +40,7 @@
       link: function (scope, element, attrs) {
         /* jshint unused:false */
         /* eslint "no-unused-vars": [2, {"args": "none"}] */
-        scope.pullClass = ['pull-left', 'pull-right'];
-        scope.i = 0;
+
         element.activateBox();
 
         var contactToggleSelector = '[data-widget="chat-pane-toggle"]';

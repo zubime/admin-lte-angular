@@ -13,23 +13,24 @@
         controller: 'MailboxCtrl',
         controllerAs: 'mailbox'
       })
-      .state('compose', {
+      .state('mailbox.compose', {
         url: '/compose',
         templateUrl: 'mailbox/compose.tpl.html',
         controller: 'ComposeCtrl',
         controllerAs: 'compose'
       })
-      .state('read', {
+      .state('mailbox.read', {
         url: '/read',
         templateUrl: 'mailbox/read.tpl.html',
         controller: 'ReadCtrl',
         controllerAs: 'read'
       })
-      .state('inbox', {
+      .state('mailbox.inbox', {
         url: '/inbox',
         templateUrl: 'mailbox/inbox.tpl.html',
         controller: 'InboxCtrl',
         controllerAs: 'inbox'
-      });
+      })
+      ;
   }
 }());

@@ -10,6 +10,11 @@
     .module('adminLteAngular', [
       'ui.router',
       'ui.bootstrap',
+      'colorpicker.module',
+      'chart.js',
+      'angular-flot',
+      'angular.morris-chart',
+      'wysiwyg.module',
       'home',
       'examples',
       'mailbox',

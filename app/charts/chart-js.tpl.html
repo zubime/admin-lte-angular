@@ -3,90 +3,72 @@
   <div class="row">
     <div class="col-md-6">
       <!-- AREA CHART -->
-      <div class="box box-primary">
-        <div class="box-header with-border">
-          <h3 class="box-title">Area Chart</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="areaChart" style="height:250px"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
-      <!-- /.box -->
+      <lte-box title="Line Chart" remove="true" collapse="true" class="box-primary">
+        <box-body>
+          <canvas id="line" class="chart chart-line" chart-data="chartJs.areaChartData.data"
+            chart-labels="chartJs.areaChartData.labels" chart-legend="true" chart-series="chartJs.areaChartData.series"
+             >
+          </canvas>
+        </box-body>
+      </lte-box>
 
       <!-- DONUT CHART -->
-      <div class="box box-danger">
-        <div class="box-header with-border">
-          <h3 class="box-title">Donut Chart</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <canvas id="pieChart" style="height:250px"></canvas>
-        </div>
-        <!-- /.box-body -->
-      </div>
-      <!-- /.box -->
-
+      <lte-box title="Bar Chart" remove="true" collapse="true" class="box-danger">
+        <box-body>
+          <canvas id="bar" class="chart chart-bar"
+            chart-data="chartJs.areaChartData.data" chart-labels="chartJs.areaChartData.labels"> chart-series="series"
+          </canvas>
+        </box-body>
+      </lte-box>
     </div>
     <!-- /.col (LEFT) -->
     <div class="col-md-6">
       <!-- LINE CHART -->
-      <div class="box box-info">
-        <div class="box-header with-border">
-          <h3 class="box-title">Line Chart</h3>
+      <lte-box title="Dounat Chart" remove="true" collapse="true" class="box-info">
+        <box-body>
+          <canvas id="doughnut" class="chart chart-doughnut"
+            chart-data="chartJs.dounatChart.data" chart-labels="chartJs.dounatChart.labels">
+          </canvas>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="lineChart" style="height:250px"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
-      <!-- /.box -->
-
+        </box-body>
+      </lte-box>
       <!-- BAR CHART -->
-      <div class="box box-success">
-        <div class="box-header with-border">
-          <h3 class="box-title">Bar Chart</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="barChart" style="height:230px"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
-      <!-- /.box -->
+      <lte-box title="Radar Chart" remove="true" collapse="true" class="box-success">
+        <box-body>
+          <canvas id="radar" class="chart chart-radar"
+            chart-data="chartJs.areaChartData.data" chart-labels="chartJs.areaChartData.labels">
+          </canvas>
+        </box-body>
+      </lte-box>
 
     </div>
     <!-- /.col (RIGHT) -->
   </div>
   <!-- /.row -->
+  <div class="row">
+    <div class="col-md-6">
+      <!-- AREA CHART -->
+      <lte-box title="Pie Chart" remove="true" collapse="true" class="box-primary">
+        <box-body>
+          <canvas id="pie" class="chart chart-pie"
+            chart-data="chartJs.pieChart.data" chart-labels="chartJs.pieChart.labels">
+          </canvas>
+        </box-body>
+      </lte-box>
+
+      <!-- DONUT CHART -->
+      <lte-box title="Donut Chart" remove="true" collapse="true" class="box-danger">
+        <box-body>
+          <canvas id="polar-area" class="chart chart-polar-area"
+            chart-data="chartJs.areaChartData.data" chart-labels="chartJs.areaChartData.labels">
+          </canvas>
+        </box-body>
+      </lte-box>
+    </div>
+    <!-- /.col (LEFT) -->
+  </div>
+  <!-- /.row -->
+
 
 </section>
 <!-- /.content -->

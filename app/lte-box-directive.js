@@ -26,6 +26,7 @@
       restrict: 'EA',
       scope: {
         options: '=o',
+        title: '@',
         class: '@',
         remove: '@',
         collapse: '@',
